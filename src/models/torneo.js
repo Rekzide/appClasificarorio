@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
 
+/**
+ * Genera Schemma para BD.
+ */
 const torneoSchema = mongoose.Schema({
     edad :{
         type: Number,

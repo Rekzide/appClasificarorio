@@ -1,6 +1,6 @@
 
-//Traer Usuario
-GET localhost:9001/v1/api/torneo/112ad217-5d2f-4106-abae-18701e93c534
+//Traer participante deceado
+GET localhost:9001/v1/api/torneo/623a5b9bef762ee765e1be15
 
 ###
 // Listar Participantes
@@ -9,7 +9,13 @@ GET localhost:9001/v1/api/torneo
 
 ###
 
+//Eliminar registro de participante
 DELETE localhost:9001/v1/api/torneo/623a5b9bef762ee765e1be15
+
+###
+
+//Marcar participante como eliminado
+GET localhost:9001/v1/api/torneo/eliminar/623a5b9bef762ee765e1be15
 
 ###
 
@@ -27,7 +33,7 @@ content-type: application/json
 
 ###
 
-
+//Modificar informacion de participante
 PUT localhost:9001/v1/api/torneo/623a5c8957e59e194366c34c HTTP/1.1
 content-type: application/json
 
