@@ -29,6 +29,10 @@ const torneoSchema = mongoose.Schema({
         type: String,
         required: true,
     },
+    eliminado :{
+        type: Boolean,
+        require: false
+    }
 });
 
 module.exports = mongoose.model('Torneo', torneoSchema);
