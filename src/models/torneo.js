@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 
 const torneoSchema = mongoose.Schema({
-    uid :{
-        type: String,
-        required: true,
-    },
     edad :{
         type: Number,
         required: true,
