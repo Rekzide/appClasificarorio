@@ -1,0 +1,41 @@
+
+//Traer Usuario
+GET localhost:9001/v1/api/torneo/112ad217-5d2f-4106-abae-18701e93c534
+
+###
+// Listar Participantes
+
+GET localhost:9001/v1/api/torneo
+
+###
+
+DELETE localhost:9001/v1/api/torneo/623a5b9bef762ee765e1be15
+
+###
+
+//Ingresar nuevos participantes
+POST localhost:9001/v1/api/torneo HTTP/1.1
+content-type: application/json
+
+    {
+    "edad": 50,
+    "apodo": "Zatu",
+    "nombre": "Saturnino Rey",
+    "comuna": "Sevilla",
+    "ranking": 2
+    }
+
+###
+
+
+PUT localhost:9001/v1/api/torneo/623a5c8957e59e194366c34c HTTP/1.1
+content-type: application/json
+
+    {
+    "edad": 53,
+    "apodo": "Zatu",
+    "nombre": "Saturnino Rey",
+    "comuna": "Sevilla",
+    "ranking": 2
+    }
+
